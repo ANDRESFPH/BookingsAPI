@@ -1,7 +1,5 @@
 describe Org::GetOrganization, type: :interactor do
 
-  org = Organization.create!(title: 'test', description: 'test', org_type: 'none')
-
   let(:organization) { create(:organization) }
 
   describe '#call' do
