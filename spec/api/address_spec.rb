@@ -40,7 +40,7 @@ describe API::AddressApi do
     let(:address) { create(:address) }
 
     it 'updates an address' do
-     put "/api/addresses/#{address.id}", addresss.to_json, 'CONTENT_TYPE' => 'application/json'
+     put "/api/addresses/#{address.id}", address.to_json, 'CONTENT_TYPE' => 'application/json'
       expect(response.status).to eq (200)
     end
   end

@@ -75,7 +75,8 @@ class API::AddressApi < Grape::API
         result = Addr::UpdateAddress.call(street: params[:street],
                                           city: params[:city],
                                           country: params[:country],
-                                          zip: params[:zip] )
+                                          zip: params[:zip],
+                                          address_id: params[:id] )
         error!(result.error, :unprocessable_entity) if result.failure? 
       end
     end
