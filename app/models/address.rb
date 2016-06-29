@@ -1,4 +1,4 @@
 class Address < ActiveRecord::Base
-	belongs_to :store	
+	has_one :store
 	validates :street, :city, :country, presence: true
 end

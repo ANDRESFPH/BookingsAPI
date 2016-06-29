@@ -1,7 +1,6 @@
 class Booking < ActiveRecord::Base
-	has_one :space
-	has_one :organization	
+	belongs_to :space
+	belongs_to :organization	
 	validates :start_date, :end_date, :price, presence: true
 	validates :price, numericality: true  
-	validates_associated :space, :organization
 end

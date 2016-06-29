@@ -1,6 +1,6 @@
 class Organization < ActiveRecord::Base
 	has_many :stores
-	belongs_to :booking
+	has_many :bookings
 
 	validates :title, :description, :org_type, presence: true
 end
