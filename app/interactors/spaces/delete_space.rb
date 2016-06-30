@@ -19,7 +19,7 @@ class Spaces::DeleteSpace
     @space ||= ::Space.find_by(id: space_id)
   end
 
-  def store_id
+  def space_id
     context.space_id
   end
 end

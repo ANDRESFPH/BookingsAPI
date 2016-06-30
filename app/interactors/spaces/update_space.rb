@@ -39,8 +39,8 @@ class Spaces::UpdateSpace
     {
       title: context.title,
       price_per_day: context.price_per_day,
-      price_per_week: price_per_week,
-      price_per_month: price_per_month,
+      price_per_week: context.price_per_week,
+      price_per_month: context.price_per_month,
       store_id: store_id
     }
   end
