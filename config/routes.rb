@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   mount API::OrganizationApi => '/api/'
   mount API::AddressApi => '/api/'
   mount API::StoreApi => '/api/'
+  mount API::SpaceApi => '/api/'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

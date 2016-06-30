@@ -9,7 +9,8 @@ describe Spaces::UpdateSpace, type: :interactor do
         price_per_day: space.price_per_day,
         price_per_week: space.price_per_week,
         price_per_month: space.price_per_month,
-        store_id: space.store
+        store_id: space.store,
+        size: space.size
       }
   end
 

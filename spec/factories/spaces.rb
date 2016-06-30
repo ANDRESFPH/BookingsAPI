@@ -4,6 +4,7 @@ FactoryGirl.define do
     price_per_day { 100 }
     price_per_week {500}
     price_per_month {1700}
+    size {'25 mts'}
     association :store, factory: :store
   end
 end

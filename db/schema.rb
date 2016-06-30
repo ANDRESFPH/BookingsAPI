@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20160629024023) do
 
   create_table "spaces", force: :cascade do |t|
     t.string   "title"
+    t.string   "size"
     t.decimal  "price_per_day"
     t.decimal  "price_per_week"
     t.decimal  "price_per_month"

@@ -1,7 +1,7 @@
 class Spaces::GetSpace
   include Interactor
 
- def call
+  def call
     get_space || fail_attempt
   end
 
