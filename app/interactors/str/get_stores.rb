@@ -2,6 +2,6 @@ class Str::GetStores
   include Interactor
 
   def call
-    # TODO
+    context.stores = ::Store.all
   end
 end

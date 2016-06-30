@@ -39,7 +39,7 @@ class Str::UpdateStore
     if organization_id.nil?
       return true
     else
-      Org::GetOrganization.call(organization_id: organization_id).success?
+      @organization ||= ::Organization.find_by(id: organization_id)
     end
   end
 
@@ -47,7 +47,7 @@ class Str::UpdateStore
     if address_id.nil?
       return true
     else
-      Addr::GetAddres.call(addres_id: address_id).success?
+      @address ||= ::Address.find_by(id: address_id)
     end
   end
     
