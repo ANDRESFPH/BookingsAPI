@@ -3,5 +3,5 @@ class Spaces::GetSpaces
 
  def call
     context.spaces = ::Space.all
-  end
+ end
 end
