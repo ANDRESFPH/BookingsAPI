@@ -12,3 +12,6 @@ org3 = Organization.create(title: 'compay 3', description: 'none', org_type: 'ty
 addr1 = Address.create(street: 'calle 1', city: 'Barcelona', country: 'spain', zip: '0009' )
 addr2 = Address.create(street: 'calle 2', city: 'Barcelona', country: 'spain', zip: '0009' )
 addr3 = Address.create(street: 'calle 3', city: 'Barcelona', country: 'spain', zip: '0009' )
+
+
+str1 = Store.create(title: 'tienda 1', opening_hours: '9 - 6', address_id: '1', organization_id: '1' )

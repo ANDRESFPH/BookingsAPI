@@ -39,9 +39,6 @@ class API::StoreApi < Grape::API
   		requires :opening_hours,
   				      type: String,
   				      desc: 'name of the city'
-  		requires :country,
-  				      type: String,
-  				      desc: 'country name' 
       requires :address_id,
                 type: Integer,
                 desc: 'address id'
@@ -66,9 +63,6 @@ class API::StoreApi < Grape::API
       requires :opening_hours,
                 type: String,
                 desc: 'name of the city'
-      requires :country,
-                type: String,
-                desc: 'country name' 
       optional :address_id,
                 type: Integer,
                 desc: 'address id'
