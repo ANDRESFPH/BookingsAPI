@@ -44,8 +44,8 @@ class Str::CreateStore
     {
       title: context.title,
       opening_hours: context.opening_hours,
-      address: address_id,
-      organization: organization_id
+      address_id: address_id,
+      organization_id: organization_id
     }
   end
 end
