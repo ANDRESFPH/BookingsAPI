@@ -36,17 +36,11 @@ class Str::UpdateStore
   end
 
   def organization
-    if organization_id.nil?
-      return true
-    else
       @organization ||= ::Organization.find_by(id: organization_id)
     end
   end
 
   def address
-    if address_id.nil?
-      return true
-    else
       @address ||= ::Address.find_by(id: address_id)
     end
   end
