@@ -36,14 +36,13 @@ class Str::UpdateStore
   end
 
   def organization
-      @organization ||= ::Organization.find_by(id: organization_id)
-    end
+    @organization ||= ::Organization.find_by(id: organization_id)
   end
 
   def address
       @address ||= ::Address.find_by(id: address_id)
-    end
   end
+  
     
   def store_params
     {
@@ -53,4 +52,5 @@ class Str::UpdateStore
       organization_id: organization_id
     }
   end
+
 end
