@@ -20,6 +20,6 @@ class Bookings::DeleteBooking
   end
 
   def booking_id
-    context.booking
+    context.booking_id
   end
 end

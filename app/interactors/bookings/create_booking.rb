@@ -2,7 +2,7 @@ class Bookings::CreateBooking
   include Interactor
 
   def call
-    (booking && create_booking) || fail_attempt
+    (space && organization && create_booking) || fail_attempt
   end  
 
   private 
@@ -21,7 +21,7 @@ class Bookings::CreateBooking
   end
 
   def fail_attempt
-    context.fail!(error: "Space cannot be created. #{booking_errors}")
+    context.fail!(error: "Booking cannot be created. #{booking_errors}")
   end
 
 
@@ -30,7 +30,7 @@ class Bookings::CreateBooking
   end
 
   def organization
-    @organization ||= ::Organization.find_by(id: space_id)
+    @organization ||= ::Organization.find_by(id: organization_id)
   end
 
   def space_id

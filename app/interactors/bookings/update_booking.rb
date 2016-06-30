@@ -45,9 +45,9 @@ class Bookings::UpdateBooking
     
   def booking_params
     {
-      start_date: context.title,
-      end_date: context.price_per_day,
-      price: context.price_per_week,
+      start_date: context.start_date,
+      end_date: context.end_date,
+      price: context.price,
       space_id: space_id,
       organization_id: organization_id,
     }
