@@ -5,7 +5,7 @@ this application was made using Ruby on Rails, the API was built using grape alo
 * the database used was PostgreSQL  9.3
 
 
-* the tests can be run using the command bundle exec rspec
+* the tests can be executed using the command bundle exec rspec
 
 
 
