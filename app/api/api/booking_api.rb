@@ -26,7 +26,7 @@ class API::BookingApi < Grape::API
   	  get do
   	    result = Bookings::GetBookings.call(booking_id: params[:id])
   	    error!(result.error, :not_found) if result.failure?
-        Entities::Booking.represent(result.store)
+        Entities::Booking.represent(result.booking)
   	  end
   	end 
 
