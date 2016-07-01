@@ -63,7 +63,7 @@ class API::SpaceApi < Grape::API
   	end
 
 
-    desc 'update a Store'
+    desc 'update a Space'
     params do
       requires :title, 
                 type: String,
@@ -102,7 +102,7 @@ class API::SpaceApi < Grape::API
     params do
       requires :id,
                 type: Integer, 
-                desc: 'Address ID.',
+                desc: 'Space ID.',
                 values: (1..1_000_000)
     end
     route_param :id do

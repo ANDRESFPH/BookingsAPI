@@ -63,19 +63,19 @@ class API::BookingApi < Grape::API
     params do
       requires :start_date, 
                 type: String,
-                desc: 'title of the store'
+                desc: 'starting date for the booking'
       requires :end_date,
                 type: String,
-                desc: 'name of the city'
+                desc: 'final date for the booking'
       requires :price,
                 type: Integer,
-                desc: 'address id'
+                desc: 'price for the booking'
       requires :organization_id,
                 type: Integer,
                 desc: 'id of the organization'
       requires :space_id,
                 type: Integer,
-                desc: 'id of the organization'
+                desc: 'id of the space'
     end
     route_param :id do
       put do
@@ -94,7 +94,7 @@ class API::BookingApi < Grape::API
     params do
       requires :id,
                 type: Integer, 
-                desc: 'Address ID.',
+                desc: 'Booking ID.',
                 values: (1..1_000_000)
     end
     route_param :id do

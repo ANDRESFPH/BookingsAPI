@@ -38,7 +38,7 @@ class API::StoreApi < Grape::API
   				      desc: 'title of the store'
   		requires :opening_hours,
   				      type: String,
-  				      desc: 'name of the city'
+  				      desc: 'Opening hours for the store'
       requires :address_id,
                 type: Integer,
                 desc: 'address id'
@@ -62,7 +62,7 @@ class API::StoreApi < Grape::API
                 desc: 'title of the store'
       requires :opening_hours,
                 type: String,
-                desc: 'name of the city'
+                desc: 'Opening hours for the store'
       requires :address_id,
                 type: Integer,
                 desc: 'address id'
@@ -85,7 +85,7 @@ class API::StoreApi < Grape::API
     params do
       requires :id,
                 type: Integer, 
-                desc: 'Address ID.',
+                desc: 'Store ID.',
                 values: (1..1_000_000)
     end
     route_param :id do
