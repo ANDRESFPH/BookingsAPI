@@ -16,7 +16,7 @@ class Spaces::UpdateSpace
   end
 
   def fail_attempt
-    context.fail!(error: "Store cannot be updated. #{space_errors}")
+    context.fail!(error: "Space cannot be updated. #{space_errors}")
   end
 
   def store
