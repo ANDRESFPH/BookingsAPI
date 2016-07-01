@@ -3,7 +3,7 @@ require 'rails_helper'
 describe API::BookingApi do
 
   context 'GET /bookings' do
-    it 'returns all the organizations' do
+    it 'returns all the Bookings' do
       get '/api/bookings'
       expect(response.status).to eq(200)
     end

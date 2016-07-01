@@ -21,7 +21,7 @@ describe API::SpaceApi do
   context 'DELETE /spaces/:id' do
      let(:space) { create(:space) }
 
-    it 'deletes a store' do
+    it 'deletes a space' do
       delete "/api/spaces/#{space.id}"
       expect(response.status).to eq (200)
     end
@@ -37,7 +37,7 @@ describe API::SpaceApi do
     end
   end
 
-  context 'PUT /stores/:id' do
+  context 'PUT /spaces/:id' do
      let(:space) { create(:space) }
 
     it 'updates a space' do
